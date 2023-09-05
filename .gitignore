@@ -1,0 +1,10 @@
+# Ambiente virtual (assumindo que você está usando virtualenv)
+/venv/
+venv/
+*.pyproj
+*.pycproj
+*.suo
+*.user
+*.sln
+*.vscode/
+__pycache__/
