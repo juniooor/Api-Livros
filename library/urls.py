@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from books.api.view import BossokViewset
+from usuarios.api.view import UserViewSet
 
 router = routers.DefaultRouter()
 
 router.register(r'books', BossokViewset)
+router.register(r'users', UserViewSet)
 
 
 urlpatterns = [
