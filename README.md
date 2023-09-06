@@ -6,8 +6,10 @@ Esta é uma API simples para gerenciar informações sobre livros, incluindo nom
 
 Antes de usar esta API, você deve ter o seguinte instalado:
 
-- Python 3.x
-- Flask (framework web em Python)
+- Python 3.11
+- Django 
+- Django Rest Framework (framework web em Python)
+
 
 ## Instalação
 
