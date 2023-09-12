@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from books.models import Bosssok
+from avaliacoes.models import Avaliacao
 
 
-class BossokSerializer(serializers.ModelSerializer):
+class AvaliacaoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Bosssok
-        fields = ['autor', 'titulo', 'ano_lancamento']
+        model = Avaliacao
+        fields = "__all__"

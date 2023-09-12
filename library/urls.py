@@ -19,12 +19,13 @@ from django.urls import path, include
 from rest_framework import routers
 from books.api.view import BossokViewset
 from usuarios.api.view import UserViewSet
+from avaliacoes.api.view import AvaliacaoViewset
 
 router = routers.DefaultRouter()
 
 router.register(r'books', BossokViewset)
 router.register(r'users', UserViewSet)
-
+router.register(r'avaliacoes', AvaliacaoViewset)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -5,4 +5,4 @@ from books.models import Bosssok
 class BossokSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bosssok
-        fields = ['autor', 'titulo', 'ano_lancamento']
+        fields = "__all__"

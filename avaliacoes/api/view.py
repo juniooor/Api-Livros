@@ -1,10 +1,10 @@
 from rest_framework import viewsets
 from rest_framework import permissions
-from books.api.serializer import BossokSerializer
-from books.models import Bosssok
+from avaliacoes.api.serializer import AvaliacaoSerializer
+from avaliacoes.models import Avaliacao
 
 
-class BossokViewset(viewsets.ModelViewSet):
-    queryset = Bosssok.objects.all()
-    serializer_class = BossokSerializer
+class AvaliacaoViewset(viewsets.ModelViewSet):
+    queryset = Avaliacao.objects.all()
+    serializer_class = AvaliacaoSerializer
     
