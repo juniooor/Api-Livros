@@ -14,4 +14,4 @@ class Avaliacao(models.Model):
     #     unique_together = ('usuario', 'livro')
         
     def __str__(self):
-        return self.usuario.first_name 
+        return self.usuario.username
