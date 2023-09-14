@@ -1,10 +1,8 @@
 from rest_framework import serializers
-from books.models import Bosssok
-from avaliacoes.api.serializer import AvaliacaoSerializer
-
-class BossokSerializer(serializers.ModelSerializer):
-    avalicao = AvaliacaoSerializer
-    
+from books.models import Book
+from avaliacoes.models import Avaliacao
+class BookSerializer(serializers.ModelSerializer):
+    avaliacao = Avaliacao
     class Meta:
-        model = Bosssok
-        fields = ['autor','titulo', 'ano_lancamento', 'avaliacao']
+        model = Book
+        fields = ['id','autor','titulo', 'ano_lancamento','avaliacao' ]
